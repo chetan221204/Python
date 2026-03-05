@@ -161,4 +161,4 @@ while a!=0:
     if(t==digit):
         count=count+1
     a=a//10
-print(count)        
+print(count);        
