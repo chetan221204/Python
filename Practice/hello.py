@@ -151,14 +151,47 @@
 #     a=a//10
 # print(Max) 
    
-a=221322
-t=2
-count=0
+# a=221322
+# t=2
+# count=0
 
-while a!=0:
-    digit=a%10
+# while a!=0:
+#     digit=a%10
 
-    if(t==digit):
-        count=count+1
-    a=a//10
-print(count);        
+#     if(t==digit):
+#         count=count+1
+#     a=a//10
+# print(count);        
+
+
+
+
+
+
+
+
+
+
+# 9-03-2025
+
+# a=int(input("Enter a Number:"))
+# for i in range (2,a):
+#     if a%i == 0:
+#         print("Not a Prime")
+
+#         break
+# else:
+#     print("Prime Number")
+
+
+
+
+
+
+a=17
+for i in range(2,a):
+    if a%i==0:
+        print("Not a Prime Number")
+        break
+else:
+        print("Prime Number")

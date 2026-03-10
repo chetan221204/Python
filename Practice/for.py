@@ -56,26 +56,26 @@
 
 # print(s)
 
-
-# size=int(input())
-# req=list(map(int,input().split()))
+# *********/
+# # size=int(input())
+# # req=list(map(int,input().split()))
 # print(req)
 
-def memServer1(req):
+# def memServer1(req):
      
-    s=0
-    for index in range(0,len(req),2):
-    s = s + req[index]
+#     s=0
+#     for index in range(0,len(req),2):
+#     s = s + req[index]
 
-    return
+#     return
 
-def main():
-    req=[]
-    size=int(input())
-    req=list(map(int,input().split()))
+# def main():
+#     req=[]
+#     size=int(input())
+#     req=list(map(int,input().split()))
 
-    result = memServer1(req)
-    print(result)
+#     result = memServer1(req)
+#     print(result)
 
-if__name__=="__main__":
-    main()
+# # if__name__=="__main__":
+# #     main()
