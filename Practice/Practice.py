@@ -100,3 +100,15 @@
 # for j in range (1,i+1):
 #     print("*",end=" ")
 # print()
+
+
+
+n=4
+for i in range(n):
+    for j in range(n-i):
+        print(" ",end="")
+    for k in range(2*i+1):
+        print("*",end="")
+    # for l in range(i):      
+    #     print("*",end="")
+    print()
