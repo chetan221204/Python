@@ -37,15 +37,123 @@
 # rotate(arr,2)
 # print(arr)
 
-def rotate(arr,k):
+# --Q4--
+
+# def reverse(arr, start, end): 
+ 
+#     while start < end: 
+#         arr[start], arr[end] = arr[end], arr[start] 
+#         start += 1 
+#         end -= 1  
+
+# def rotate(arr, k): 
+ 
+#     n = len(arr) 
+ 
+#     reverse(arr,0,k-1) 
+#     reverse(arr,k,n-1) 
+#     reverse(arr,0,n-1) 
+  
+# arr = [1,2,3,4,5,6,7] 
+# rotate(arr,2) 
+# print(arr) 
+
+ 
+# --Q5- Right_Rotation-
+
+# def reverse(arr,start,end): 
+ 
+#     while start < end: 
+#         arr[start],arr[end] = arr[end],arr[start] 
+#         start += 1 
+#         end -= 1 
+ 
+# def rotate_right(arr,k): 
+#     n = len(arr) 
+ 
+#     reverse(arr,0,n-1) 
+#     reverse(arr,0,k-1) 
+#     reverse(arr,k,n-1) 
+ 
+# arr = [1,2,3,4,5] 
+ 
+# rotate_right(arr,2) 
+ 
+# print(arr)
+
+
+
+# # --Q6-- Check if Two Arrays are Rotation
+# # Hint: A+A contains B
+
+# def is_rotation(A, B):
+#     if len(A) != len(B):
+#         return False
+        
+#     temp = A + A
+#     n = len(temp)
+#     m = len(B)
+    
+#     for i in range(n - m + 1):
+#         if temp[i:i+m] == B:
+#             return True
+            
+#     return False
+
+# A = [1, 2, 3, 4, 5]
+# B = [3, 4, 5, 1, 2]
+
+# print(is_rotation(A, B))
+
+
+
+# --Q7--
+# string rotation
+
+# def rotate(arr,k):
+#     n=len(arr)
+#     for _ in range(k):
+#         first=arr[0]
+#         for i in range(n-1):
+#             arr[i]=arr[i+1]
+        
+#         arr[n-1]=first
+
+# arr=list("abcdef")
+# rotate(arr, 2)
+# # print(arr)
+# print("".join(arr))
+
+
+
+# --Q9-- Rotate First Row of Matrix
+
+
+
+
+
+
+
+
+# --Q10--
+#Binary Search
+
+def BinarySearch(arr,target):
+    
     n=len(arr)
-    temp=arr[:k]
-    for i in range(k,n):
-        arr[i-k]=arr[i]
+    low=0
+    high=n-1
+    while low <=high:
+        mid= (low +high) //2
 
-    for i in range(k):
-        arr[n-k+i]=temp[i]     
+        if (arr[mid] ==target):
+            return mid  
 
-arr=[1,2,3,4,5]
-rotate(arr,1)
-print(arr)
+        elif(arr[mid] >target ):
+            high=mid -1
+        else:
+            low=mid +1
+    return -1
+
+arr=[10,20,30,40,50]
+print(BinarySearch(arr,50))         

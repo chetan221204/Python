@@ -74,18 +74,18 @@
 
 # 21-03-2026
 # is array rotation
-# def isrotation(a,b):
-#     if(len(a)!=len(b)):
-#         return False
+def isrotation(a,b):
+    if(len(a)!=len(b)):
+        return False
     
-#     temp=a+a
+    temp=a+a
 
-#     for i in range (len(a)):
-#         if b==temp[i:i+len(b)]:
-#             return True
-#     return False
+    for i in range (len(a)):
+        if b==temp[i:i+len(b)]:
+            return True
+    return False
 
-# print(isrotation([1,2,3,4,5],[3,4,5,1,2]))
+print(isrotation([1,2,3,4,5],[3,4,5,1,2]))
 
 
 # x="abcdef"
@@ -100,12 +100,12 @@
 
 
 
-# def rotate_row_right(matrix,row,k):
-#     n=len(matrix[row])
-#     k=k%n
-#     print(matrix[row][:-k])
-#     matrix[row] = matrix[row][-k:]+matrix[row][:-k]
-#     return matrix
+def rotate_row_right(matrix,row,k):
+    n=len(matrix[row])
+    k=k%n
+    # print(matrix[row][:-k])
+    matrix[row] = matrix[row][-k:]+matrix[row][:-k]
+    return matrix
 
 # def rotate_row_left(matrix,row,k):
 #     n=len(matrix[row])
@@ -114,14 +114,14 @@
 #     matrix[row] = matrix[row][k:]+matrix[row][:k]
 #     return matrix
 
-# mat=[
-#     [1,2,3],
-#     [4,5,6],
-#     [7,8,9],
-# ]
-# # print(matrix[1][1])
+mat=[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+]
+# print(matrix[1][1])
 
-# print(rotate_row_right(mat,0,1))
+print(rotate_row_right(mat,0,1))
 # print(rotate_row_left(mat,0,1))
 
 
@@ -159,20 +159,20 @@
 
 
 
-def BinarySearch(arr,target):
-    low=0
-    high=len(arr)-1
+# def BinarySearch(arr,target):
+#     low=0
+#     high=len(arr)-1
 
-    while low<=high:
-        mid =(low+high)//2
-        if arr[mid] ==target:
-            return mid
-        elif arr[mid]<target:
-            low = mid+1
-        else:
-            high = mid-1
-    return -1
-arr=[10,20,30,40,50,60]
+#     while low<=high:
+#         mid =(low+high)//2
+#         if arr[mid] ==target:
+#             return mid
+#         elif arr[mid]<target:
+#             low = mid+1
+#         else:
+#             high = mid-1
+#     return -1
+# arr=[10,20,30,40,50,60]
  
-print(BinarySearch(arr,40))
-print(BinarySearch(arr,100)) 
+# print(BinarySearch(arr,40))
+# print(BinarySearch(arr,100)) 

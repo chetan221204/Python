@@ -1,7 +1,17 @@
-arr=[10,20,30,40,50]
-first=arr[0]
-for i in range(len(arr)-1):
-    arr[i]=arr[i+1]
-    
-arr[len(arr)-1] =first
-print(arr)
+ef BinarySearch(arr,target):
+#     low=0
+#     high=len(arr)-1
+
+#     while low<=high:
+#         mid =(low+high)//2
+#         if arr[mid] ==target:
+#             return mid
+#         elif arr[mid]<target:
+#             low = mid+1
+#         else:
+#             high = mid-1
+#     return -1
+# arr=[10,20,30,40,50,60]
+ 
+# print(BinarySearch(arr,40))
+# print(BinarySearch(arr,100)) 
