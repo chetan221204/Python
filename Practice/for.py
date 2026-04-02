@@ -1,19 +1,15 @@
-def binary_search(arr, target):
-    lo, hi = 0, len(arr) - 1
+def reverse(arr,start,end):
+    while start < end:
+        arr[start],arr[end]=arr[end],arr[start]
+        start +=1
+        end -=1
 
-    while lo < hi:
-        mid = (lo + hi) // 2
+def rotate(arr,k):
+    n=len(arr)
+    reverse(arr,0,n-1)
+    reverse(arr,0,k-1)
+    reverse(arr,k,n-1)
 
-        if arr[mid] == target:
-            return mid        
-        elif arr[mid] < target:
-            lo = mid + 1
-        else:
-            hi = mid
-
-arr=[1,2,3,4,5,6,7]
-binary_search(arr,5)
-
-
-
- 
+arr=[1,2,3,4,5,6]
+rotate(arr,2)
+print(arr)
