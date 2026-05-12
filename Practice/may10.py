@@ -1,0 +1,64 @@
+# def Secondlag_element(arr):
+#     n=len(arr)
+#     largest_element=float('-inf')
+#     Secondlag_element=float('-inf')
+#     for i in range(n):
+#         if(arr[i]>largest_element):
+#             largest_element=arr[i]
+    
+#     # return largest_element
+#     for i in range(n):
+#         if(arr[i]>Secondlag_element and arr[i]!=largest_element):
+#             Secondlag_element=arr[i]
+
+#     return Secondlag_element
+
+# arr=[12,423,54,64,2324,64]
+# print(Secondlag_element(arr))
+
+# def secondlargest(arr):
+#     n=len(arr)
+#     largest=float('-inf')
+#     slargest=float('-inf')
+#     for i in range(n):
+#         if(arr[i]>largest):
+#             slargest=largest
+#             largest=arr[i]
+#         elif(arr[i]<largest and arr[i]>slargest):
+#             slargest=arr[i]
+#     return slargest
+
+# arr=[11,22,44,55,66,77,88,345]
+# print(secondlargest(arr))
+
+
+# arr=[1,1,1,1,2,2,3,3,4,4,5,6,6,6,6,3,3,3,2,1,1]
+# result=[]
+# seen=set()
+# for num in arr:
+#     if num not in seen:
+#         seen.add(num)
+#         result.append(num)
+# print(result)
+
+
+# def dublicate(arr):
+#     i=0
+#     n=len(arr)
+#     for j in range(1,n):
+#         if(arr[j]!=arr[i]):
+#             arr[i+1]=arr[j]
+#             i+=1
+#     return arr[:i+1]
+
+# arr=[1,1,1,1,2,2,2,3,3,4,4,5,5]
+# print(dublicate(arr))
+
+
+# arr=[1,3,0,3,0,0,3,5,0,0,7,8]
+# i=0
+# for j in range(len(arr)):
+#     if(arr[j]!=0):
+#         arr[i],arr[j]=arr[j],arr[i]
+#         i+=1
+# print(arr)
