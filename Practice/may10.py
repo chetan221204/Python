@@ -76,18 +76,46 @@
 
 
 
-def reverse(arr,start,end):
-    while start<end:
-        arr[start],arr[end]=arr[end],arr[start]
-        start +=1
-        end -=1
-def rotate(arr,k):
-    n=len(arr)
-    k=k%n
-    reverse(arr,0,k-1)
-    reverse(arr,k,n-1)
-    reverse(arr,0,n-1)
-    return arr
+# def reverse(arr,start,end):
+#     while start<end:
+#         arr[start],arr[end]=arr[end],arr[start]
+#         start +=1
+#         end -=1
+# def rotate(arr,k):
+#     n=len(arr)
+#     k=k%n
+#     reverse(arr,0,k-1)
+#     reverse(arr,k,n-1)
+#     reverse(arr,0,n-1)
+#     return arr
 
-arr=[1,2,3,4,5]
-print(rotate(arr,1))
+# arr=[1,2,3,4,5]
+# print(rotate(arr,1))
+
+
+
+def removeOuterParentheses(s):
+    
+    result = ""  
+    # Initialize nesting level counter
+    level = 0     
+    # Traverse the string
+    for char in s:
+        # If we encounter '(', increase the level 
+        if char == '(':
+            # If we're inside a primitive, add '(' to result
+            if level > 0:
+                result += char
+            # Increase the nesting level for '('
+            level += 1  
+        elif char == ')':
+            # Decrease the nesting level for ')'
+            level -= 1  
+            # If we're inside a primitive, add ')' to result
+            if level > 0:
+                result += char
+    # Return the final result after removing the outer parentheses
+    return result
+# Example usage
+s = "(()())(())"  
+print(removeOuterParentheses(s)) 
