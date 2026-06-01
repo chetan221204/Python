@@ -1,4 +1,4 @@
-# # Bulb swiching problem  using square root 
+# # # # Bulb swiching problem  using square root 
 # n=int (input())
 # for i in range(1,n+1):
 #     root=int (i**0.5)
@@ -7,8 +7,6 @@
 #         print("ON",end=" ")
 #     else:
 #         print("OFF",end=" ")
-
-
 
 # bubble sort
 # lib  
@@ -20,11 +18,12 @@
 # a4k3b2
 # aeknbd
 
-# def character(a):
-# #     a
-# print(chr(65))
-# print(ord("a"))
-
+# for i in "a4k3b2":
+#     if i.isalpha():
+#         pre=i
+#         print(i,end='')
+#     else:
+#         print(chr(ord(pre)+int(i)),end='')
 
 
 # a=123
@@ -41,18 +40,31 @@
 # for i in range(len(a)-1,-1,-1):
 #     print(a[i],end=" ")
 
+# n='ideal software solution'
+# a=n.split("     ")
+# print(a)
+# # print(a[::-1])
+# for words in a:
+#     print(words[::-1],end=" ")
 
 
+# def reveres(world1,start,end):
+#     while start < end:
+#         arr[start],arr[end]=arr[end],arr[start]
+#         start+=1
+#         end-=1
 
 
-
-def reveres(world1,start,end):
-    while start < end:
-        arr[start],arr[end]=arr[end],arr[start]
-        start+=1
-        end-=1
+# world1=str(input())
+# world2=str(input())
+# reveres(world1,0)
 
 
-world1=str(input())
-world2=str(input())
-reveres(world1,0)
+# for i in range(0,3):
+#     for j in range(0,i+1):
+#         print("*",end=" ")
+#     print('\n')
+
+    # for i in range(1,4):
+    #     print("*" * i)
+
