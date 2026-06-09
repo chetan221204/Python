@@ -1,13 +1,12 @@
-ring:")
-subs=input("Enter sub string:")
-flag=False
-pos=-1
-n=len(s)
-while True:
-    pos=s.find(subs,pos+1,n)
-    if pos==-1:
-        break
-    print("found at position",pos)
-    flag=True
-if flag ==False:
-    print("NOt Found")
+s1=input("Enter First Character:")
+s2=input("Enter Second Character:")
+i,j=0,0
+output=""
+while i<len(s1) or j<len(s2):
+    if i<(len(s1)):
+        output=output+s1[i]
+        i+=1
+    if j<(len(s2)):
+        output=output+s2[j]
+        j+=1
+print(output)
