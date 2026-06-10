@@ -103,12 +103,28 @@
 
 
 
-n=4
-for i in range(n):
-    for j in range(n-i):
-        print(" ",end="")
-    for k in range(2*i+1):
-        print("*",end="")
-    # for l in range(i):      
-    #     print("*",end="")
-    print()
+# n=4
+# for i in range(n):
+#     for j in range(n-i):
+#         print(" ",end="")
+#     for k in range(2*i+1):
+#         print("*",end="")
+#     # for l in range(i):      
+#     #     print("*",end="")
+#     print()
+
+# n1,n2=list(map(int,input().split()))
+# max_num=max(n1,n2)
+# while True:
+#     if(max_num%n1==0 and max_num%n2==0):
+#         print(max_num)
+#         break
+#     max_num+=1
+
+
+n1,n2=list(map(int,input().split()))
+min_num=min(n1,n2)
+for i in range(1,min_num):
+    if(n1%i==0 and n2%i==0 ):
+        hcf=i
+print(hcf)

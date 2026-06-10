@@ -1,12 +1,10 @@
-s1=input("Enter First Character:")
-s2=input("Enter Second Character:")
-i,j=0,0
-output=""
-while i<len(s1) or j<len(s2):
-    if i<(len(s1)):
-        output=output+s1[i]
-        i+=1
-    if j<(len(s2)):
-        output=output+s2[j]
-        j+=1
-print(output)
+
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+for i in range(3):
+    for j in range(3):
+        if i>=j:
+            print(matrix[i][j],end=" ")
+    prin
