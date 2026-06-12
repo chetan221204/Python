@@ -122,9 +122,9 @@
 #     max_num+=1
 
 
-n1,n2=list(map(int,input().split()))
-min_num=min(n1,n2)
-for i in range(1,min_num):
-    if(n1%i==0 and n2%i==0 ):
-        hcf=i
-print(hcf)
+# n1,n2=list(map(int,input().split()))
+# min_num=min(n1,n2)
+# for i in range(1,min_num):
+#     if(n1%i==0 and n2%i==0 ):
+#         hcf=i
+# print(hcf)
